@@ -188,13 +188,32 @@ a{
 <section class="content">
   <hr class="my-4">
        <?php
-        $url = $_POST['url'];
+        /*$url = $_POST['url'];
         if($url){
           echo "<b>".$url." The content is as follows：</b><br><br>";
           echo "<pre>";
           curl($url);
           echo "</pre>";
-        }
+        }*/
+        $url = $_POST['url'];
+        if(preg_match('#^https?://10.0.0.3#i', $url) === 1) {
+        echo "<b>".$url." You are not authorized：</b><br><br>";
+        echo "<pre>";
+        curl($url);
+        echo "</pre>";
+       }
+        /*else if(preg_match('#^https?://169.254.169.254#i', $url) === 1) {
+        echo "<b>".$url." Restricted：</b><br><br>";
+        echo "<pre>";
+        curl($url);
+        echo "</pre>";
+      }*/
+      else if(preg_match('#^https?://169.254.169.254/latest/meta-data#i', $url)=== 1){
+        echo "<b>".$url." Restricted：</b><br><br>";
+        echo "<pre>";
+        curl($url);
+        echo "</pre>";
+  }
       ?> 
 <p>Vulnmachines is a cybersecurity learning platform where security enthusiasts can get a hands-on experience of various skills in different cybersecurity categories through Capture The Flag Contests. A place to learn and improve penetration testing/ethical hacking skills for FREE. The labs consist of 30+ real world scenarios to practice the latest exploits and cutting edge hacking techniques.</p>
   <p align="center"><a href="https://twitter.com/Vulnmachines" class="btn twtr" target="_b">Follow me on Twitter</a>
