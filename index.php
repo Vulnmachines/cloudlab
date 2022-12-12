@@ -230,10 +230,13 @@ a{
   }
       ?> 
 <p>Vulnmachines is a cybersecurity learning platform where security enthusiasts can get a hands-on experience of various skills in different cybersecurity categories through Capture The Flag Contests. A place to learn and improve penetration testing/ethical hacking skills for FREE. The labs consist of 30+ real world scenarios to practice the latest exploits and cutting edge hacking techniques.</p>
-  <p align="center"><a href="https://twitter.com/Vulnmachines" class="btn twtr" target="_b">Follow me on Twitter</a>
-  </p>
+ <!--  <p align="center"><a href="https://twitter.com/Vulnmachines" class="btn twtr" target="_b">Follow me on Twitter</a>
+  </p> -->
+  <br>
+  
+  
 </section>
 
-
+<center><a href="https://secops.group"><img src="static/images/secops.png" style="width: 300px;height: 100px;"></a></center>
   </body>
   </html>
