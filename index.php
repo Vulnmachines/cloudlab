@@ -170,7 +170,7 @@ a{
   <div class="sides"> <a href="#" class="menu"> </a></div>
   <div class="info">
   <h4><a href="#category">Vulnmachines</a></h4>
-    <h1>Vulnmachines Lab - Let's find out flag file</h1>
+    <h1>Vulnmachines Lab - Find The Flag </h1>
      <div class="s131">
       <form method="POST">
         <div class="inner-form">
